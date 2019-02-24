@@ -1,0 +1,260 @@
+/*
+	Dark1 : #2C3E50;
+	DarK2 : #34495E;
+*/
+* {
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+legend {
+	border-bottom: 1px solid #eee;	
+	line-height: 30px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #777;
+}
+body {
+	background-color: #fafafa;
+}
+li {
+	list-style: none;
+}
+table {	
+	border-collapse: collapse;
+	border: 1px solid #777;
+	width:100%;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+table td {
+	font-size: 13px;
+}
+table tr > td:last-child a {
+	text-decoration: none;
+}
+table tr > td:last-child a:last-child {
+	color: #E74C3C;
+}
+table tr > td:last-child a:last-child:hover {
+	color: #C0392B;
+}
+table tr > td:last-child a:first-child {
+	color: #3498DB;
+}
+table tr > td:last-child a:first-child:hover {
+	color: #2980B9;
+}
+table td, th {
+	border: 1px solid #777;
+	padding: 10px;
+}
+.navbar {
+	height: 50px;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	line-height: 50px;
+	padding:0 20px;
+	position: fixed;
+	width:100%;
+	top:0;
+	z-index: 1;
+}
+.navbar li {
+	display: inline-block;
+}
+.navbar .loggedAs {
+	font-size: 14px;
+	display: inline-block;
+}
+.navbar li > a {
+	padding-left:15px;
+	text-decoration: none;
+	color: #777;
+	font-size: 14px;
+}
+.navbar li > a:hover {
+	text-decoration: none;
+	color: #000;
+}
+.pull-right {
+	float:right;
+}
+.pull-left {
+	float:left;
+}
+.sidebar {
+	background-color: #34495E;
+	width:250px;
+	height:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:2;
+}
+.sidebar .brand {
+	height:50px;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	line-height: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.sidebar .brand a {
+	padding: 15px 20px;
+	display: block;
+	color: #000;	
+	text-decoration: none;
+}
+.sidebar .brand a:hover {
+
+}
+.sidebar li {
+	
+}
+.sidebar li:not(.brand) > a {
+	padding: 15px 20px;
+	display: block;
+	color: #fff;	
+	text-decoration: none;
+}
+.sidebar li:not(.brand) > a:hover, .sidebar li:not(.brand) > a.active {
+	padding: 15px 20px;
+	display: block;
+	color: #fff;	
+	text-decoration: none;
+	background-color: #2C3E50;
+}
+div.content {
+	margin-left:270px;
+	margin-top: 70px;
+	margin-right:20px;
+}
+div.content .card {
+	margin-bottom: 50px;
+}
+div.information-card {
+	display: flex;
+}
+div.information-card .card {
+	width:25%;
+	margin-right:15px;
+}
+div.information-card .card:last-child {
+	margin-right: 0px;
+}
+div.card {
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+div.card-body {
+	padding: 15px;
+}
+div.information-card span {
+	font-weight: bold;
+	font-size: 16px;
+	display: block;
+	border-bottom: 1px solid #eee;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+div.information-card .count {
+	font-size: 26px;
+	font-weight: bold;
+}
+.input {
+	padding: 8px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+.input:focus {
+	box-shadow: 0 3px 10px 1px rgba(0,0,0, 0.03);
+}
+.input-block {
+	width:100%;
+}
+.form-group label {
+	font-weight: bold;
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.form-group .input {
+	margin-top:10px;
+}
+.form-block label {
+	display: block;
+}
+.btn {
+	background-color: #fff;
+	border: 1px solid #eee;
+	padding: 8px 20px;
+	border-radius:3px;
+	cursor: pointer;
+	font-size: 14px;
+}
+form .form-group:last-child {
+	margin-bottom: 0;
+}
+.btn-default { 
+	background-color: #fff; 
+}
+.btn-default:hover { 
+	background-color: #eee; 
+}
+.btn-primary { 
+	background-color: #3498DB; 
+	border: 1px solid #2980B9;
+	color: #fff;
+}
+.btn-primary:hover { 
+	background-color: #2980B9; 
+}
+.btn-danger { 
+	background-color: #E74C3C; 
+	border: 1px solid #C0392B;
+	color: #fff;
+}
+.btn-danger:hover { 
+	background-color: #C0392B; 
+}
+.btn-warning { 
+	background-color: #F1C40F; 
+	border: 1px solid #F39C12;
+	color: #fff;
+}
+.btn-warning:hover { 
+	background-color: #F39C12; 
+}
+.btn-success { 
+	background-color: #2ECC71; 
+	border: 1px solid #27AE60;
+	color: #fff;
+}
+.btn-success:hover { 
+	background-color: #27AE60; 
+}
+.button-group {
+	text-decoration: none;
+}
+div.alert {
+	background-color: #fff;
+	padding:10px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	border-radius: 3px;
+}
+div.alert-success {
+	background-color: green;
+	border: 1px solid green;
+	color: #fff;
+}
+div.alert-danger {
+	background-color: red;
+	border: 1px solid red;
+	color: #fff;
+}
